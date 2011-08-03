@@ -5,6 +5,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chromaton", "Chromaton\Chro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chromaton.Tests", "Chromaton.Tests\Chromaton.Tests.csproj", "{CF4E1B9B-3E41-42B9-9CBB-468372FABE4B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{99D1541D-1E93-416B-9BEA-175800B4DF0A}"
+	ProjectSection(SolutionItems) = preProject
+		COPYING.LESSER.txt = COPYING.LESSER.txt
+		COPYING.txt = COPYING.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
