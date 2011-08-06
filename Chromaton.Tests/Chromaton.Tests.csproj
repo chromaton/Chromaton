@@ -39,6 +39,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CursorTests.cs" />
+    <Compile Include="LexerTests\PlainTextLexerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TokenTests.cs" />
   </ItemGroup>

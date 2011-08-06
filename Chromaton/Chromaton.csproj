@@ -36,6 +36,7 @@
   <ItemGroup>
     <Compile Include="Cursor.cs" />
     <Compile Include="Lexers\ILexer.cs" />
+    <Compile Include="Lexers\PlainTextLexer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
