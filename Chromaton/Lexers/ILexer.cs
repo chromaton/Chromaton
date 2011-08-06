@@ -24,6 +24,6 @@ namespace Chromaton.Lexers
 
     public interface ILexer
     {
-        IEnumerable<IToken> Tokenize(string source);
+        IEnumerable<Token> Tokenize(string source);
     }
 }
