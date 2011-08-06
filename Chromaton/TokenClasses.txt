@@ -1,0 +1,28 @@
+﻿Comment
+    Comment.Block
+        Block comments, like `/* */` in C-like languages, `<!-- -->` in HTML, `(* *)` in Pascal, or any insignificant text in Brainfuck.
+    Comment.Line
+        Line comments, like `//` in C-like languages, the shell style comment `#`, or `'` in Visual Basic.  The rule here is that the comment must be terminated by a new line.
+    Comment.Documentation
+        Comments used for documentation, like `///` in C#, `'''` in Visual Basic, or `/**` for Javadoc.
+Grouping
+    Grouping.Statements
+        Statement grouping symbols, like `{` and `}` in C-like languages.
+    Grouping.Expression
+        Expression grouping symbols, like `(` and `)` when not used as an operator in most languages.
+    Grouping.Separator
+        Expression and tuple separator, like `,` when not used as an operator in most languages.
+Operator
+    Operator.Symbol
+        Non-word operators, like `+` or `*` in most languages, or `>`; `+`; or `.` in Brainfuck.
+    Operator.Keyword
+        Word operators, like `and` or `not` in Python and F#, `sizeof` in C-like languages, `is` and `as` in C#, or `instanceof` in Java.
+Whitespace
+    Whitespace.Insignificant
+        Ignored whitespace, like most whitespace in most languages.
+    Whitespace.Significant
+        Significant whitespace, like indentation in Python, Haml, and certain modes of `F#`.
+
+Text
+    Text.Plain
+        Text that is displayed as-is to the user, like the entire contents of text files, or the contents of most nodes in an HTML document.
