@@ -1,5 +1,5 @@
 ﻿//------------------------------------------------------------------------------
-// <copyright file="PlainTextLexer.cs" company="(none)">
+// <copyright file="LexerBase.cs" company="(none)">
 //  This file is part of Chromaton.
 //
 //  Chromaton is free software: you can redistribute it and/or modify it under
@@ -20,13 +20,28 @@
 
 namespace Chromaton.Lexers
 {
+    using System;
     using System.Collections.Generic;
 
-    public class PlainTextLexer : LexerBase
+    public abstract class LexerBase : ILexer
     {
-        protected override IEnumerable<Token> Tokenize(string source)
+        private readonly static Token[] empty = new Token[0];
+
+        IEnumerable<Token> ILexer.Tokenize(string source)
         {
-            yield return new Token(0, source.Length, "Text.Plain");
+            if (source == null)
+            {
+                throw new ArgumentNullException("source");
+            }
+
+            if (source.Length == 0)
+            {
+                return empty;
+            }
+
+            return this.Tokenize(source);
         }
+
+        protected abstract IEnumerable<Token> Tokenize(string source);
     }
 }

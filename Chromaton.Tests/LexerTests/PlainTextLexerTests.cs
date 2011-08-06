@@ -31,7 +31,7 @@ namespace Chromaton.Tests.LexerTests
         [Test]
         public void Tokenize_WhenCalledWithAnEmptySource_YieldsNoTokens()
         {
-            var lexer = new PlainTextLexer();
+            var lexer = (ILexer)new PlainTextLexer();
 
             var result = lexer.Tokenize(string.Empty);
 
@@ -41,7 +41,7 @@ namespace Chromaton.Tests.LexerTests
         [Test]
         public void Tokenize_WhenCalledWithANullSource_ThrowsException()
         {
-            var lexer = new PlainTextLexer();
+            var lexer = (ILexer)new PlainTextLexer();
 
             Assert.That(() => lexer.Tokenize(null), Throws.InstanceOf<ArgumentNullException>());
         }
@@ -49,7 +49,7 @@ namespace Chromaton.Tests.LexerTests
         [Test]
         public void Tokenize_WhenCalledWithANonEmptySource_YieldsASingleToken()
         {
-            var lexer = new PlainTextLexer();
+            var lexer = (ILexer)new PlainTextLexer();
             var source = " OK OK OK OK OK OK OK OK ";
 
             var token = lexer.Tokenize(source).Single();
@@ -60,7 +60,7 @@ namespace Chromaton.Tests.LexerTests
         [Test]
         public void Tokenize_SingleYieldedToken_MatchesWholeSource()
         {
-            var lexer = new PlainTextLexer();
+            var lexer = (ILexer)new PlainTextLexer();
             var source = " OK OK OK OK OK OK OK OK ";
 
             var result = lexer.Tokenize(source).Single();
@@ -72,7 +72,7 @@ namespace Chromaton.Tests.LexerTests
         [Test]
         public void Tokenize_SingleYieldedToken_IsOfTypeText()
         {
-            var lexer = new PlainTextLexer();
+            var lexer = (ILexer)new PlainTextLexer();
             var source = " OK OK OK OK OK OK OK OK ";
 
             var result = lexer.Tokenize(source).Single();
