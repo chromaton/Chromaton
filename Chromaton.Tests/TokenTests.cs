@@ -30,7 +30,6 @@ namespace Chromaton.Tests
         public void ctor_WhenCalledWithValidValues_Succeeds()
         {
             var token = new Token(0, 1, "OK");
-            Assert.Pass();
         }
 
         [Test]

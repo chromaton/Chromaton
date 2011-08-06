@@ -53,8 +53,6 @@ namespace Chromaton.Tests.LexerTests
             var source = " OK OK OK OK OK OK OK OK ";
 
             var token = lexer.Tokenize(source).Single();
-
-            Assert.Pass();
         }
 
         [Test]
