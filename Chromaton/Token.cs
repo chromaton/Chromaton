@@ -64,5 +64,10 @@ namespace Chromaton
         {
             get { return this.tokenClass; }
         }
+
+        public override string ToString()
+        {
+            return string.Format("{0}\t{1}\t{2}", this.startOffset, this.endOffset, this.tokenClass);
+        }
     }
 }
