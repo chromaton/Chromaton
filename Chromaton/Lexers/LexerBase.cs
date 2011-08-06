@@ -25,7 +25,7 @@ namespace Chromaton.Lexers
 
     public abstract class LexerBase : ILexer
     {
-        private readonly static Token[] empty = new Token[0];
+        private static readonly Token[] empty = new Token[0];
 
         IEnumerable<Token> ILexer.Tokenize(string source)
         {
