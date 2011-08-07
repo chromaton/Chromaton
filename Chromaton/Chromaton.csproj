@@ -35,6 +35,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cursor.cs" />
+    <Compile Include="Lexers\BrainfuckLexer.cs" />
     <Compile Include="Lexers\ILexer.cs" />
     <Compile Include="Lexers\LexerBase.cs" />
     <Compile Include="Lexers\PlainTextLexer.cs" />

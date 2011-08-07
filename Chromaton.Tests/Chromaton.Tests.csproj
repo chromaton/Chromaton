@@ -42,11 +42,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CursorTests.cs" />
+    <Compile Include="LexerTests\BrainfuckLexerTests.cs" />
     <Compile Include="LexerTests\PlainTextLexerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TokenTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Expectations\BrainfuckLexerTests\Tokenize\Comment.data" />
+    <EmbeddedResource Include="Expectations\BrainfuckLexerTests\Tokenize\Comment.expected" />
+    <EmbeddedResource Include="Expectations\BrainfuckLexerTests\Tokenize\Empty.data" />
+    <EmbeddedResource Include="Expectations\BrainfuckLexerTests\Tokenize\Empty.expected" />
+    <EmbeddedResource Include="Expectations\BrainfuckLexerTests\Tokenize\Programs\IOTest.data" />
+    <EmbeddedResource Include="Expectations\BrainfuckLexerTests\Tokenize\Programs\IOTest.expected" />
+    <EmbeddedResource Include="Expectations\BrainfuckLexerTests\Tokenize\Programs\Obscure.data" />
+    <EmbeddedResource Include="Expectations\BrainfuckLexerTests\Tokenize\Programs\Obscure.expected" />
+    <EmbeddedResource Include="Expectations\BrainfuckLexerTests\Tokenize\Whitespace.data" />
+    <EmbeddedResource Include="Expectations\BrainfuckLexerTests\Tokenize\Whitespace.expected" />
     <None Include="packages.config" />
     <None Include="Settings.StyleCop" />
   </ItemGroup>
