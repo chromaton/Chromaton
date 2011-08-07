@@ -1,0 +1,129 @@
+﻿<html>
+  <head>
+    <title>Token Classes</title>
+    <style>
+        body
+        {
+            font-family: Palatino Linotype;
+        }
+
+        code
+        {
+            font-family: Consolas;
+            font-size: 10pt;
+
+            color: #52595D;
+            background-color: #F9F9F9;
+            border: 1px solid #CCC;
+            border-radius: 3px;
+            white-space: nowrap;
+            padding: 0 3px;
+        }
+    </style>
+  </head>
+  <body>
+
+    <h2>Shared Tokens</h2>
+
+    <dl>
+      <dt>Comment</dt>
+      <dd>
+        <dl>
+          <dt>Comment.Block</dt>
+          <dd>Block comments, like <code>/* */</code> in C-like languages, <code>&lt;!-- --&gt;</code> in HTML, <code>(* *)</code> in Pascal, or any insignificant text in Brainfuck.</dd>
+          <dt>Comment.Line</dt>
+          <dd>Line comments, like <code>//</code> in C-like languages, the shell style comment <code>#</code>, or <code>'</code> in Visual Basic.  The rule here is that the comment must be terminated by a new line.</dd>
+      </dd>
+      <dt>Whitespace</dt>
+      <dd>
+        <dl>
+          <dt>Whitespace.Insignificant</dt>
+          <dd>Ignored whitespace, like most whitespace in most languages.</dd>
+          <dt>Whitespace.Significant</dt>
+          <dd>Significant whitespace, like indentation in Python, Haml, and certain modes of F#.</dd>
+        </dl>
+      </dd>
+    </dl>
+
+    <h2>Tokens for Imperative Languages</h2>
+
+    <dl>
+      <dt>Comment</dt>
+      <dd>
+        <dl>
+          <dt>Comment.Documentation</dt>
+          <dd>Comments used for documentation, like <code>///</code> in C#, <code>'''</code> in Visual Basic, or <code>/**</code> for Javadoc.</dd>
+        </dl>
+      </dd>
+      <dt>Grouping</dt>
+      <dd>
+        <dl>
+          <dt>Grouping.Statements</dt>
+          <dd>Statement grouping symbols, like <code>{</code> and <code>}</code> in C-like languages.</dd>
+          <dt>Grouping.Expression</dt>
+          <dd>Expression grouping symbols, like <code>(</code> and <code>)</code> when not used as an operator in most languages.</dd>
+          <dt>Grouping.Separator</dt>
+          <dd>Expression and tuple separator, like <code>,</code> when not used as an operator in most languages.</dd>
+        </dl>
+      </dd>
+      <dt>Name</dt>
+      <dd>
+        <dl>
+          <dt>Name.Identifier</dt>
+          <dd>Names of types, variables, and fields in most languages.</dd>
+        </dl>
+      </dd>
+      <dt>Operator</dt>
+      <dd>
+        <dl>
+          <dt>Operator.Symbol</dt>
+          <dd>Non-word operators, like <code>+</code> or <code>*</code> in most languages, or <code>></code>; <code>+</code>; or <code>.</code> in Brainfuck.</dd>
+          <dt>Operator.Keyword</dt>
+          <dd>Word operators, like <code>and</code> or <code>not</code> in Python and F#, <code>sizeof</code> in C-like languages, <code>is</code> and <code>as</code> in C#, or <code>instanceof</code> in Java.</dd>
+        </dl>
+      </dd>
+    </dl>
+
+    <h2>Tokens for Declarative Languages</h2>
+
+    <h2>Tokens for Markup Languages</h2>
+    <dl>
+      <dt>Name</dt>
+      <dd>
+        <dl>
+          <dt>Name.Attribute</dt>
+          <dd>Name of an attribute in markup languages, like the 'style' in <code>&lt;b style="foo"&gt;&lt;/b&gt;</code> for HTML.</dd>
+          <dt>Name.Element</dt>
+          <dd>Name of an element in markup languages, like the 'b' in <code>&lt;b&gt; &lt;/b&gt;</code> for HTML, the 'b' in <code>{\b  }</code> in RTF, or the 'textbf' in <code>\textbf{ }</code> in LaTeX.</dd>
+        </dl>
+      </dd>
+      <dt>Delimiter</dt>
+      <dd>
+        <dl>
+          <dt>Delimiter.Tag</dt>
+          <dd>Delimiter for tags in markup languages, like the angle brackes and slashes in <code>&lt;br /&gt;</code> for HTML, and the slashes and curly braces in <code>{\b bold}</code> and <code>\textbf{bold}</code> for RTF and LaTeX (respectively).
+              For HTML and XML this also includes the start and end of processing instructions, CDATA sections, and etc. (for example: <code>&lt;!</code>, <code>&lt;?</code>, and <code>?&gt;</code>).</dd>
+          <dt>Delimiter.Literal</dt>
+          <dd>Delimiter for sections of literal text in markup languages, like <code>[CDATA[</code>, <code>[INCLUDE[</code>, <code>[IGNORE[</code> and <code>]]</code> in XML.</dd>
+        </dl>
+      </dd>
+      <dt>Entity</dt>
+      <dd>
+        <dl>
+          <dt>Entity.Named</dt>
+          <dd>For named entities in markup languages, like <code>&amp;copy;</code> in HTML.</dd>
+          <dt>Entity.Number</dt>
+          <dd>For entities expressed with their numeric representation, like <code>&amp;#169;</code> in HTML, or <code>\'a9</code> or <code>\u00a9?</code> in RTF.</dd>
+        </dl>
+      </dd>
+      <dt>Text</dt>
+      <dd>
+        <dl>
+          <dt>Text.Plain</dt>
+          <dd>Text that is displayed as-is to the user, like the entire contents of text files, or the contents of most nodes in an HTML document.</dd>
+        </dl>
+      </dd>
+    </dl>
+
+  </body>
+</html>
