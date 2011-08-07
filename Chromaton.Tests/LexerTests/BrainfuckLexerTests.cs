@@ -45,7 +45,7 @@ namespace Chromaton.Tests.LexerTests
 
         [Test]
         [TestCaseSource("lexerApprovals")]
-        public void approve_Tokenize(string testCase)
+        public void expectation_Tokenize(string testCase)
         {
             var test = Expectation.GetTestData(testCase);
             var lexer = (ILexer)new BrainfuckLexer();
