@@ -66,6 +66,53 @@
           <dd>Expression and tuple separator, like <code>,</code> when not used as an operator in most languages.</dd>
         </dl>
       </dd>
+      <dt>Literal</dt>
+      <dd>
+        <dl>
+          <dt>Literal.Character</dt>
+          <dd>A literal character, delimited by <code>'</code> in most languages that support character literals.</dd>
+          <dt>Literal.Integer</dt>
+          <dd>A literal integer, like <code>1</code> almost all languages.</dd>
+          <dd>
+            <dl>
+              <dt>Literal.Integer.Decimal</dt>
+              <dd>A literal integer in decimal.</dd>
+              <dt>Literal.Integer.Hexadecimal</dt>
+              <dd>A literal integer in hexadecimal.</dd>
+              <dt>Literal.Integer.Octal</dt>
+              <dd>A literal integer in octal.</dd>
+              <dt>Literal.Integer.Short</dt>
+              <dd>A literal short-integer in languages that differentiate.</dd>
+              <dt>Literal.Integer.Long</dt>
+              <dd>A literal long-integer in languages that differentiate.</dd>
+            </dl>
+          </dd>
+          <dt>Literal.Keyword</dt>
+          <dd>A literal value that is represented by a keyword.</dd>
+          <dd>
+            <dl>
+              <dt>Literal.Keyword.Boolean</dt>
+              <dd>A literal boolean, like <code>true</code> and <code>false</code> in most languages.</dd>
+              <dt>Literal.Keyword.Null</dt>
+              <dd>A literal null or undefined value, like <code>null</code> in most languages and <code>undefined</code> in JavaScript.</dd>
+            </dl>
+          </dd>
+          <dt>Literal.Real</dt>
+          <dd>A literal real number, like <code>1.0</code> or <code>5e-2</code> in most languages.</dd>
+          <dd>
+            <dl>
+              <dt>Literal.Real.Single</dt>
+              <dd>A literal single-precision number in languages that differentiate.</dd>
+              <dt>Literal.Real.Double</dt>
+              <dd>A literal double-precision number in languages that differentiate.</dd>
+              <dt>Literal.Real.Decimal</dt>
+              <dd>A literal decimal number in languages that differentiate.</dd>
+            </dl>
+          </dd>
+          <dt>Literal.String</dt>
+          <dd>A literal string of characters, delimited by <code>&quot;</code> in most languages.</dd>
+        </dl>
+      </dd>
       <dt>Name</dt>
       <dd>
         <dl>
@@ -88,15 +135,6 @@
 
     <h2>Tokens for Markup Languages</h2>
     <dl>
-      <dt>Name</dt>
-      <dd>
-        <dl>
-          <dt>Name.Attribute</dt>
-          <dd>Name of an attribute in markup languages, like the 'style' in <code>&lt;b style="foo"&gt;&lt;/b&gt;</code> for HTML.</dd>
-          <dt>Name.Element</dt>
-          <dd>Name of an element in markup languages, like the 'b' in <code>&lt;b&gt; &lt;/b&gt;</code> for HTML, the 'b' in <code>{\b  }</code> in RTF, or the 'textbf' in <code>\textbf{ }</code> in LaTeX.</dd>
-        </dl>
-      </dd>
       <dt>Delimiter</dt>
       <dd>
         <dl>
@@ -114,6 +152,22 @@
           <dd>For named entities in markup languages, like <code>&amp;copy;</code> in HTML.</dd>
           <dt>Entity.Number</dt>
           <dd>For entities expressed with their numeric representation, like <code>&amp;#169;</code> in HTML, or <code>\'a9</code> or <code>\u00a9?</code> in RTF.</dd>
+        </dl>
+      </dd>
+      <dt>Literal</dt>
+      <dd>
+        <dl>
+          <dt>Literal.Attribute</dt>
+          <dd>Value of an attribute in markup languages, like the '"foo"' in <code>&lt;b style="foo"&gt;&lt;/b&gt;</code> for HTML.</dd>
+        </dl>
+      </dd>
+      <dt>Name</dt>
+      <dd>
+        <dl>
+          <dt>Name.Attribute</dt>
+          <dd>Name of an attribute in markup languages, like the 'style' in <code>&lt;b style="foo"&gt;&lt;/b&gt;</code> for HTML.</dd>
+          <dt>Name.Element</dt>
+          <dd>Name of an element in markup languages, like the 'b' in <code>&lt;b&gt; &lt;/b&gt;</code> for HTML, the 'b' in <code>{\b  }</code> in RTF, or the 'textbf' in <code>\textbf{ }</code> in LaTeX.</dd>
         </dl>
       </dd>
       <dt>Text</dt>
